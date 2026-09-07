@@ -1,11 +1,7 @@
-import React from 'react'
-
-const App = () => {
+export default function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-900 text-white">
+    <div className="h-screen bg-abyss text-cyan flex items-center justify-center">
       <h1 className="text-4xl font-bold">Depth Strider Dashboard</h1>
     </div>
   )
 }
-
-export default App
