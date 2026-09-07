@@ -48,4 +48,4 @@ export const mockSurveys = [
     ],
     detectionCount: 7,
   },
-];
+]

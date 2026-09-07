@@ -9,3 +9,63 @@
   --color-crit: #ef4444;
   --color-ok: #10b981;
 }
+
+/* Leaflet markers — strip default white square */
+.ds-detection-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.ds-marker-dot {
+  transform-origin: center;
+}
+
+@keyframes ds-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.75;
+  }
+}
+
+.ds-marker-pulse {
+  animation: ds-pulse 1.6s ease-in-out infinite;
+}
+
+/* Dark tooltip styling for map */
+.leaflet-container {
+  font-family: inherit;
+  background: #0a0e14;
+}
+
+.leaflet-tooltip {
+  background: #111823;
+  border: 1px solid #1e2937;
+  color: #e2e8f0;
+  box-shadow: none;
+}
+
+.leaflet-tooltip-top::before {
+  border-top-color: #1e2937;
+}
+
+/* Dark Leaflet zoom controls */
+.leaflet-control-zoom a {
+  background: #111823 !important;
+  color: #e2e8f0 !important;
+  border-color: #1e2937 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #1e2937 !important;
+  color: #22d3ee !important;
+}
+
+.leaflet-bar {
+  border: 1px solid #1e2937 !important;
+  box-shadow: none !important;
+}

@@ -16,6 +16,7 @@
  * @property {DetectionStatus} status
  * @property {string} thumbnailUrl
  * @property {{x:number,y:number,w:number,h:number}} boundingBox
+ * @property {[number, number][]} [segmentation] Percent points for U-Net overlay
  */
 
 /**
